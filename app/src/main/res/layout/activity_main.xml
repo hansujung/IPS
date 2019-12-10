@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGraphBlue">
+
+
+    <!-- personal -->
+    <TextView
+        android:id="@+id/tv_coff1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="coff1"
+        android:textColor="@color/colorWhite"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/ed_coff1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_coff1"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:text="27.55"
+        android:textColor="@color/colorWhite"
+        android:textSize="15dp"
+        android:theme="@style/EditTextStyle" />
+
+    <TextView
+        android:id="@+id/tv_coff2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ed_coff1"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="coff2"
+        android:textColor="@color/colorWhite"
+        android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/ed_coff2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_coff2"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:inputType="number"
+        android:text="18.0"
+        android:textColor="@color/colorWhite"
+        android:textSize="15dp"
+        android:theme="@style/EditTextStyle" />
+
+    <TextView
+        android:id="@+id/tv_scan_period"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ed_coff2"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="scan period"
+        android:textColor="@color/colorWhite"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/ed_scan_period"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_scan_period"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:inputType="number"
+        android:text="3"
+        android:textColor="@color/colorWhite"
+        android:textSize="15dp"
+        android:theme="@style/EditTextStyle" />
+
+    <TextView
+        android:id="@+id/tv_filterQ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ed_scan_period"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="filterQ"
+        android:textColor="@color/colorWhite"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/ed_filterQ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_filterQ"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:inputType="text"
+        android:text="0.008"
+        android:textColor="@color/colorWhite"
+        android:textSize="15dp"
+        android:theme="@style/EditTextStyle" />
+
+    <TextView
+        android:id="@+id/tv_filterR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ed_filterQ"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="filterR"
+        android:textColor="@color/colorWhite"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/ed_filterR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_filterR"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:inputType="text"
+        android:text="0.1"
+        android:textColor="@color/colorWhite"
+        android:textSize="15dp"
+        android:theme="@style/EditTextStyle" />
+
+    <TextView
+        android:id="@+id/tv_height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ed_filterR"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="키(height)"
+        android:textColor="@color/colorWhite"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/ed_height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_height"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:inputType="number"
+        android:text="160"
+        android:textColor="@color/colorWhite"
+        android:textSize="15dp"
+        android:theme="@style/EditTextStyle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_scan_start"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="Position Start"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/btn_move"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="#0000FF"
+            android:gravity="center"
+            android:text="Signal list"
+            android:textColor="@color/colorWhite"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
