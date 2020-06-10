@@ -93,11 +93,10 @@ public class Floor15Activity extends AppCompatActivity implements BeaconConsumer
     private double ratio[] = {(float) 0.7, (float) 0.4}; //화면 비율
 
     // 15층 와이파이 정보 & 와이파이 관련 변수
-    private WifiInfo testlab = new WifiInfo("testlab", "8a:36:6c:ce:4b:34", 780.0, 3555.0);
-    private WifiInfo ResearchPlanning = new WifiInfo("ResearchPlanning", "88:36:6c:18:b7:de", 1395.0, 1000.0);
-    private WifiInfo wearable3 = new WifiInfo("wearable3", "90:9f:33:f2:a6:4e", 1556.0, 1914.0);
-    private WifiInfo wearable4 = new WifiInfo("wearable4", "8a:36:6c:ce:79:a8", 1800.0, 2100.0);
-    private WifiInfo aict = new WifiInfo("Aict-Wlans", "00:1c:c5:06:b3:40", 1124.0, 4266.0);
+    private WifiInfo testlab = new WifiInfo("testlab", "", 780.0, 3555.0);
+    private WifiInfo ResearchPlanning = new WifiInfo("ResearchPlanning", "", 1395.0, 1000.0);
+    private WifiInfo wearable3 = new WifiInfo("wearable3", "", 1556.0, 1914.0);
+    private WifiInfo wearable4 = new WifiInfo("wearable4", "", 1800.0, 2100.0);
     private WifiInfo wifiInfo[] = {testlab, ResearchPlanning, wearable3, wearable4};
     private ImageView iv, wifi1, wifi2, wifi3;
     private WifiManager mainWifi;
@@ -115,9 +114,9 @@ public class Floor15Activity extends AppCompatActivity implements BeaconConsumer
     List<WifiItem> allWifiList = new ArrayList<WifiItem>();
 
     // 15층 비컨 정보 & 비컨 관련 변수 (블루투스 관련)
-    private BluetoothInfo Lemon1 = new BluetoothInfo("lemon1", "EE:CB:CC:05:B1:5E", 1500.0, 850.0);
-    private BluetoothInfo Lemon2 = new BluetoothInfo("lemon2", "DE:DD:80:81:1C:F1", 1500.0, 1700.0);
-    private BluetoothInfo Lemon3 = new BluetoothInfo("lemon3", "E5:C1:4A:63:B5:7F", 1500.0, 2400.0);
+    private BluetoothInfo Lemon1 = new BluetoothInfo("lemon1", "", 1500.0, 850.0);
+    private BluetoothInfo Lemon2 = new BluetoothInfo("lemon2", "", 1500.0, 1700.0);
+    private BluetoothInfo Lemon3 = new BluetoothInfo("lemon3", "", 1500.0, 2400.0);
     private BluetoothInfo beaconinfo[] = {Lemon1, Lemon2, Lemon3};
     private BluetoothAdapter mBluetoothAdapter;
     private BeaconAdapter beaconAdapter;
