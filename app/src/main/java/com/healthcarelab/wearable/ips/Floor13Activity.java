@@ -93,10 +93,10 @@ public class Floor13Activity extends AppCompatActivity implements BeaconConsumer
     private double ratio[] = {(float) 0.7, (float) 0.4}; //화면 비율
 
     // 13층 와이파이 정보 & 와이파이 관련 변수
-    private WifiInfo wearable = new WifiInfo("wearable", "88:36:6c:0c:37:4e", 1556.0, 1600.0);
-    private WifiInfo wearable2 = new WifiInfo("wearable2","90:9f:33:f2:a6:12", 1556.0, 1000.0);
-    private WifiInfo smartgrid = new WifiInfo("smartgrid-13","90:9f:33:69:a2:6c", 1500.0, 3555.0);
-    private WifiInfo aict = new WifiInfo("Aict-Wlans","00:1c:c5:06:60:c1", 1100.0, 3555.0);
+    private WifiInfo wearable = new WifiInfo("wearable", "", 1556.0, 1600.0);
+    private WifiInfo wearable2 = new WifiInfo("wearable2","", 1556.0, 1000.0);
+    private WifiInfo smartgrid = new WifiInfo("smartgrid-13","", 1500.0, 3555.0);
+    private WifiInfo aict = new WifiInfo("Aict-Wlans","", 1100.0, 3555.0);
     private WifiInfo wifiInfo[] = {wearable, wearable2, smartgrid};
     private ImageView iv, wifi1, wifi2, wifi3;
     private WifiManager mainWifi;
@@ -113,9 +113,9 @@ public class Floor13Activity extends AppCompatActivity implements BeaconConsumer
     List<WifiItem> allWifiList = new ArrayList<WifiItem>();
 
     // 15층 비컨 정보 & 비컨 관련 변수 (블루투스 관련)
-    private BluetoothInfo Candy1 = new BluetoothInfo("candy1", "DC:14:7B:CF:B4:B1", 1500.0, 850.0);
-    private BluetoothInfo Candy2 = new BluetoothInfo("candy2", "F3:E2:3C:5F:77:14",  1500.0, 1500.0);
-    private BluetoothInfo Candy3 = new BluetoothInfo("candy3", "E9:6F:9C:B7:B0:C7", 1500.0, 2400.0);
+    private BluetoothInfo Candy1 = new BluetoothInfo("candy1", "", 1500.0, 850.0);
+    private BluetoothInfo Candy2 = new BluetoothInfo("candy2", "",  1500.0, 1500.0);
+    private BluetoothInfo Candy3 = new BluetoothInfo("candy3", "", 1500.0, 2400.0);
     private BluetoothInfo beaconinfo[] = {Candy1, Candy2, Candy3};
     private BluetoothAdapter mBluetoothAdapter;
     private BeaconAdapter beaconAdapter;
